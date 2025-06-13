@@ -1,0 +1,80 @@
+.simulation-steps {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--color-bg);
+}
+
+.simulation-steps h2 {
+    font-size: 2.5rem;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+
+.simulation-subtitle {
+    color: var(--color-muted);
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.steps-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.step {
+    flex: 1;
+    min-width: 240px;
+    max-width: 320px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.step h3 {
+    color: var(--color-text);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: var(--color-muted);
+    font-size: 0.95rem;
+}
+
+.cta-simulation {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-simulation:hover {
+    background-color: #0040aa;
+}

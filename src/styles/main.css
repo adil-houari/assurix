@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Brand colors */
+    --color-primary: #0052cc;
+    /* Assurix blue */
+    --color-accent: #6366f1;
+    /* Mauve stylé */
+    --color-secondary: #3b82f6;
+    --color-highlight: #e0f2fe;
+
+    /* Neutrals */
+    --color-bg: #f9fafb;
+    --color-bg-dark: #1e293b;
+    --color-muted: #6b7280;
+    --color-text: #1f2937;
+    --color-white: #ffffff;
+
+    /* Fonts & Shadows */
+    --font-main: 'Inter', sans-serif;
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --radius: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: var(--font-main);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+select,
+textarea {
+    font-family: var(--font-main);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    background-color: white;
+    color: var(--color-text);
+}

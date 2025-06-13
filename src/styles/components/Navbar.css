@@ -1,0 +1,149 @@
+.navbar {
+    background: var(--color-bg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: static;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.logo {
+    height: 36px;
+}
+
+.dropdown span {
+    font-weight: 500;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    font-weight: 500;
+    margin-left: 100px;
+}
+
+.nav-links li a {
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--color-primary);
+}
+
+.careers {
+    font-weight: 600;
+    color: #b71a5b;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar input {
+    padding: 8px 12px 8px 36px;
+    border: 1px solid var(--color-accent);
+    border-radius: 8px;
+    background: white;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-muted);
+}
+
+.client-btn {
+    background: var(--color-primary);
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(0, 82, 204, 0.2);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.client-btn:hover {
+    background: #0040a0;
+}
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-muted);
+    cursor: pointer;
+}
+
+/* Hover dropdowns */
+.hover-group {
+    position: relative;
+}
+
+.hover-group .dropdown-menu,
+.hover-group .lang-menu {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px;
+    list-style: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+}
+
+.lang-switch .lang-menu {
+    right: 0;
+    left: auto;
+}
+
+.hover-group:hover .dropdown-menu,
+.hover-group:hover .lang-menu {
+    display: block;
+}
+
+.dropdown-menu li,
+.lang-menu li {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dropdown-menu li:hover,
+.lang-menu li:hover {
+    background-color: #f3f4f6;
+}

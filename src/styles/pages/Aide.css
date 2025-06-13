@@ -1,0 +1,115 @@
+.aide-page {
+    padding: 20px 30px;
+    background: linear-gradient(to bottom, #f9fbff, #ffffff);
+    font-family: var(--font-main);
+}
+
+.aide-hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.aide-hero h1 {
+    font-size: 2.8rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.aide-hero p {
+    font-size: 1.2rem;
+    color: var(--color-muted);
+    margin-bottom: 30px;
+}
+
+.aide-hero input {
+    width: 100%;
+    max-width: 500px;
+    padding: 14px 20px;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.aide-hero input:focus {
+    border-color: var(--color-primary);
+}
+
+/* Categories grid */
+.aide-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+}
+
+.aide-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aide-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.aide-card .icon {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 15px;
+}
+
+.aide-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+.aide-card p {
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+/* Contact section */
+.aide-contact {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.aide-contact p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.aide-contact button {
+    background-color: #6366f1;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.aide-contact button:hover {
+    background-color: #4f46e5;
+}
+
+@media (max-width: 768px) {
+    .aide-hero input {
+        width: 90%;
+    }
+
+    .aide-categories {
+        grid-template-columns: 1fr;
+    }
+}
