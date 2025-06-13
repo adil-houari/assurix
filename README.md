@@ -1,3 +1,22 @@
+
+A React-based insurance website prototype.
+
+## 💼 Includes
+- Landing page with header, hero section, and CTA
+- Quote simulation form
+- List of services and company benefits
+- Contact section and responsive layout
+
+## 🔧 Tech Stack
+- React
+- CSS3
+
+## 🚀 To run locally
+
+--bash
+npm install
+npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
